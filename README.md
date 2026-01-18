@@ -12,3 +12,17 @@ My primary academic interests lie in Penetration Testing, Network and Applicatio
 * **Offensive Security:** Penetration Testing Lifecycle, Vulnerability Assessment, Internal Network Scanning
 * **Security Tools:** Cisco IOS (CLI), Nmap, Wireshark, Cisco Packet Tracer, GNS3
 * **Programming:** Python
+
+## Certification and Training
+* **Cisco Certified CyberOps Associate** 
+   * *Provider:* Cisco Networking Academy
+   * *Module:* WQE7001 Cyber Security (Sem 1 2025/2026)
+   * *Skills Gained:* Security Concepts, Security Monitoring, Host-Based Analysis.
+ 
+* **TryHackMe Online Course** 
+  * **OSINT & Reconnaissance:**
+     * Modules: Sakura Room (Image Intelligence), Google Dorking, Search Skills.
+  * **Offensive Security & Scanning:**
+     * Modules: Nmap (Network Mapping), Pentesting Fundamentals, Offensive Security Intro.
+  * **Defensive Security:**
+     * Modules: Cyber Kill Chain, Network Traffic Basics, Detecting Web Attacks.
