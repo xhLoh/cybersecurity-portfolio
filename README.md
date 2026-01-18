@@ -46,3 +46,14 @@ My primary academic interests lie in Penetration Testing, Network and Applicatio
     * **Active Scanning:** Conducted Nmap scans (Device Mapping & Service Detection) to enumerate open ports and running service versions.
     * **Vulnerability Analysis:** Correlated identified service versions with known Common Vulnerabilities and Exposures (CVEs) to assess risk levels.
 * **Outcome:** Produced a vulnerability report detailing exposed services and potential exploit vectors based on mapped CVEs.
+
+## Learning Journey
+
+### Reflection on Progress
+Transitioning from a pure Software Engineering role to Cybersecurity has been a shift in mindset—from "building functionality" to "identifying fragility." Through the **WQE7001** module and my hands-on labs with **TryHackMe**, I have moved beyond theoretical knowledge to practical application. I can now not only write code but also analyze network traffic patterns (using Wireshark) and map attack surfaces (using Nmap and Shodan).
+
+### Challenges & Plan for Improvement
+* **The Challenge:** Coming from a software background, I initially found complex Layer 3 Networking concepts specifically debugging OSPF route propagation and GRE tunnel interfaces to be the most difficult. My instinct was to look for code errors rather than configuration mismatches.
+* **The Plan:** To overcome this, I am dedicating more time to Cisco Packet Tracer simulations to visualize packet flow. I am also pursuing more online hands on tutorials such as Cisco Network Academy or TryHackMe to strengthen my fundamental understanding of network protocols.
+
+* **Future Focus:** While I am comfortable with coding using Python, I find the wide range of networking tools available like Metasploit overwhelming. I plan to address this by doing further research regarding the capabilities of Python in terms of Network Security.
