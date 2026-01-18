@@ -1,0 +1,15 @@
+#!/bin/bash
+# attacker.startup - Installation and Tool Setup
+
+# 1. Configure Attacker IP
+ifconfig eth0 10.0.0.20/24 up
+
+# 2. CRITICAL FIX: Force DNS resolution (for package installation)
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+# 3. Update system packages and install python3-scapy
+apt-get update
+apt-get install -y python3-scapy python3-pip
+
+echo "Attacker device is fully initialized. Python tools ready."
+

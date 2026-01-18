@@ -1,0 +1,17 @@
+#!/bin/bash
+# attacker.startup - Installation, IP Configuration, and MITM Setup
+
+# 1. Configure Attacker IP
+ifconfig eth0 10.0.0.20/24 up
+
+# 2. Enable IP forwarding: CRITICAL for the MITM attack (prevents DoS).
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# 3. Force DNS resolution (for package installation)
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+# 4. Update system packages and install python3-scapy and pip
+apt-get update
+apt-get install -y python3-scapy python3-pip
+
+echo "Attacker device is fully initialized. IP, Forwarding, and Python tools ready."

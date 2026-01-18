@@ -1,0 +1,41 @@
+#!/bin/bash
+# dhcp_server.startup - Sets up the ISC-DHCP-SERVER and pool
+
+# Force DNS resolution for installation
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+# 1. Configure Static Server IP
+ifconfig eth0 10.0.0.1/24 up
+
+# 2. Update and install ISC DHCP Server
+apt-get update
+apt-get install -y isc-dhcp-server
+
+# Stop any lingering processes
+killall dhcpd 
+
+# 3. CRITICAL: Configure a tiny DHCP pool (11 addresses)
+cat << EOF > /etc/dhcp/dhcpd.conf
+default-lease-time 60;
+max-lease-time 300;
+authoritative;
+
+# CRITICAL FIX for Starvation Lab: Ignore client updates (Client ID/MAC validation).
+# This prevents the server from silently rejecting forged packets.
+ignore client-updates; 
+
+subnet 10.0.0.0 netmask 255.255.255.0 {
+    range 10.0.0.50 10.0.0.60;  # Pool of 11 IPs (50-60)
+    option broadcast-address 10.0.0.255;
+    option routers 10.0.0.1;
+    option domain-name-servers 8.8.8.8;
+}
+EOF
+
+# 4. Set interface to listen on (eth0)
+echo 'INTERFACESv4="eth0"' > /etc/default/isc-dhcp-server
+
+# 5. Start the DHCP service
+service isc-dhcp-server restart
+
+echo "ISC DHCP Server configured with pool 10.0.0.50-60 and validation disabled."
