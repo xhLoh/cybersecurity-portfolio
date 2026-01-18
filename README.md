@@ -26,3 +26,23 @@ My primary academic interests lie in Penetration Testing, Network and Applicatio
      * Modules: Nmap (Network Mapping), Pentesting Fundamentals, Offensive Security Intro.
   * **Defensive Security:**
      * Modules: Cyber Kill Chain, Network Traffic Basics, Detecting Web Attacks.
+   
+## Project Experience
+
+### 1. Secure Network Topology Implementation
+* **Objective:** To design and secure a multi-site enterprise network simulation connecting three distinct geographical areas.
+* **Tools Used:** Cisco Packet Tracer, Cisco IOS.
+* **Methodology:**
+    * **Routing:** Configured OSPF (Open Shortest Path First) for dynamic routing between core routers (R1, R2, R3).
+    * **Encryption:** Implemented GRE over IPSec VPN tunnels to ensure encrypted, private communication between branch offices over a public network simulation.
+    * **Access Control:** Hardened switch configurations using VLANs to segregate departmental traffic.
+* **Outcome:** Successfully established a stable, redundant network with verified encrypted connectivity (Ping/ICMP) between all simulated branch offices.
+
+### 2. External Reconnaissance & Vulnerability Assessment
+* **Objective:** To perform a comprehensive security audit on a target infrastructure to identify exposed assets and critical vulnerabilities.
+* **Tools Used:** Nmap (Network Mapper), Shodan, CVE Databases (NVD).
+* **Methodology:**
+    * **Passive Reconnaissance:** Utilized Shodan to identify internet-facing devices and gather banner information without direct interaction.
+    * **Active Scanning:** Conducted Nmap scans (Device Mapping & Service Detection) to enumerate open ports and running service versions.
+    * **Vulnerability Analysis:** Correlated identified service versions with known Common Vulnerabilities and Exposures (CVEs) to assess risk levels.
+* **Outcome:** Produced a vulnerability report detailing exposed services and potential exploit vectors based on mapped CVEs.
