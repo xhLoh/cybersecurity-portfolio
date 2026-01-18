@@ -57,3 +57,14 @@ Transitioning from a pure Software Engineering role to Cybersecurity has been a 
 * **The Plan:** To overcome this, I am dedicating more time to Cisco Packet Tracer simulations to visualize packet flow. I am also pursuing more online hands on tutorials such as Cisco Network Academy or TryHackMe to strengthen my fundamental understanding of network protocols.
 
 * **Future Focus:** While I am comfortable with coding using Python, I find the wide range of networking tools available like Metasploit overwhelming. I plan to address this by doing further research regarding the capabilities of Python in terms of Network Security.
+
+## Career Objective
+My professional goal is to leverage my foundation in Software Engineering to specialize in **Application Security** and **Network Infrastructure**. I aim to bridge the operational gap between development and security teams ("DevSecOps"), ensuring that secure coding practices and robust network architectures are integrated early in the development lifecycle rather than as an afterthought.
+
+## Contact Information
+I am open to collaboration on projects related to network security, automation, and vulnerability assessment.
+
+* **LinkedIn:** [www.linkedin.com/in/xin-herng-loh-aa04882b7]
+* **GitHub:** [https://github.com/xhLoh]
+* **Email:** [pabloloh1111@gmail.com]
+* **Portfolio Website:** []
